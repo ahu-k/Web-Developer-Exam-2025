@@ -1,0 +1,11 @@
+@use '@/styles/color-variables.scss' as *;
+
+.link-btn{
+    background-color: $primary;
+    padding: 1rem 0.5rem;
+    width: 13rem;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    cursor: pointer;
+}

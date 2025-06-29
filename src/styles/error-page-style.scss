@@ -1,0 +1,24 @@
+@use '@/styles/color-variables.scss' as *;
+
+.error-container{
+    padding: 0rem 0rem 1rem 1rem;
+    img{
+        filter: grayscale(70%);
+    }
+}
+
+.error-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;  
+    height: 45vh;    
+    width: 70%;
+}
+
+.error-button-container{
+    display: flex;
+    align-items: end;     
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}

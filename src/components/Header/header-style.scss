@@ -1,0 +1,24 @@
+@use '@/styles/color-variables.scss' as *;
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: $primary;
+    z-index: 2;
+}
+
+.home-icon{
+    color: $quaternary;
+    display: flex;
+    align-items: center;
+}
+
+.burger-icon{
+    color: $tertiary;
+}

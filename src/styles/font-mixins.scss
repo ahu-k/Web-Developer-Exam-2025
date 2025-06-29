@@ -1,0 +1,37 @@
+@use "@/styles/color-variables.scss" as *;
+
+@mixin main-font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+@mixin xl-heading ($font-size : 3.875rem) { //62px
+    @include main-font;
+    font-size: $font-size; 
+}
+
+@mixin main-heading ( 
+    $font-size : 3.125rem, //50px
+    $color : $primary, 
+    $text-shadow: rgb(0, 0, 0) 1px 0 1px
+    ){ 
+    @include main-font;
+    font-size: $font-size; 
+    color: $color;
+    text-shadow: $text-shadow;
+}
+
+@mixin heading-2 ($font-size : 1.75rem) { //28px
+    @include main-font;
+    font-size: $font-size; 
+}
+
+@mixin text-regular ($font-size : 1.25rem){ //20px
+    @include main-font;
+    font-size: $font-size; 
+}
+
+@mixin caption ($font-size : 1rem){ //16px
+    @include main-font;
+    font-size: $font-size; 
+}

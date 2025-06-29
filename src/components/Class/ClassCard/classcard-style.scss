@@ -1,0 +1,37 @@
+@use '@/styles/color-variables.scss' as *;
+@use '@/styles/font-mixins.scss' as *;
+
+.class-card-section{
+    padding-top: 1rem;
+}
+
+.class-card-container{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+
+    // Hide Scroolbar
+    &::-webkit-scrollbar { /*Chrome, Safari and Opera */
+        display: none;
+    }
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;/* Firefox */
+}
+
+.class-card{
+    position: relative;
+    padding-top: 0.5rem;
+    
+    img{
+        display: flex;
+        position: relative;
+        border-radius: 10px;
+        width: clamp( 20vh, 30vw, 30vw );
+        height: clamp( 25vh, 35vw, 35vw );
+    }
+
+    p{
+        @include caption;
+        padding: 0.5rem 0rem;
+    }
+}

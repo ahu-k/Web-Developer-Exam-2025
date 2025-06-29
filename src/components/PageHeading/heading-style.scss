@@ -1,0 +1,7 @@
+@use '@/styles/font-mixins.scss' as *;
+@use '@/styles/color-variables.scss' as *;
+
+.heading{
+    @include main-heading ($color: $secondary, $text-shadow:none);
+    padding: 1rem 0rem;
+}

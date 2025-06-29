@@ -1,0 +1,35 @@
+@use '@/styles/color-variables.scss' as *;
+
+.splash-container{
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.splash-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;  
+    height: 45vh;        
+    width: 70%;
+
+    h1{
+        padding: 0rem 0rem 1rem 2.5rem;
+    }
+
+    span{
+        padding: 0rem 0.3rem;
+    }
+
+    p{
+        color: $primary;
+        border-left: 40px solid $primary;
+        line-height: 0.1em;
+    }
+}
+
+.splash-button-container{
+    display: flex;
+    align-items: end;     
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}

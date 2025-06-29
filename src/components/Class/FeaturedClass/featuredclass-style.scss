@@ -1,0 +1,13 @@
+.featured-class-container{
+    display: flex;
+    align-items: end;
+    position: relative;
+    width: clamp( 40vh, 100%, 50vh );
+    height: clamp( 45vh, 95vw, 50vh );
+    padding: 2rem 1rem;
+    margin: 0 auto;
+
+    img{
+        border-radius: 10px;
+    }
+}
